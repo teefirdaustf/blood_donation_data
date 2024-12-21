@@ -1,4 +1,4 @@
-# Dirty Dataset Creation
+# Creating a Dirty Dataset
 
 ## Overview
 This document describes the process of introducing intentional anomalies into the `donations_facility.csv` dataset obtained from https://github.com/MoH-Malaysia/data-darah-public/blob/main/donations_facility.csv to simulate real-world data issues. The purpose of this process is to fulfil the requirements of a group project for the Programming Course undertaken in University Malaya. Data wrangling to clean the 'dirtied' data is expected to follow after this. 
