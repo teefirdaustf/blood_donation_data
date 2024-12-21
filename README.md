@@ -1,7 +1,7 @@
 # Dirty Dataset Creation
 
 ## Overview
-This document describes the process of introducing intentional anomalies into the `donations_facility.csv` dataset to simulate real-world data issues. The purpose of this process is to demonstrate technical data wrangling and reproducibility skills.
+This document describes the process of introducing intentional anomalies into the `donations_facility.csv` dataset obtained from https://github.com/MoH-Malaysia/data-darah-public/blob/main/donations_facility.csv to simulate real-world data issues. The purpose of this process is to fulfil the requirements of a group project for the Programming Course undertaken in University Malaya. Data wrangling to clean the 'dirtied' data is expected to follow after this. 
 
 ## Dirtying Process
 
@@ -68,7 +68,7 @@ df.loc[set_null, "daily"] = np.nan
 
 # Save the dirty dataset
 filename = "donations_facility_dirty.csv"
-dirtry_df = df.to_csv(filename, index=False)
+dirty_df = df.to_csv(filename, index=False)
 print(f"Dirty dataset saved as {filename}")
 ```
 
@@ -83,6 +83,6 @@ To recreate the dirty dataset:
 This will generate a file called `donations_facility_dirty.csv` in the project directory.
 
 ## Notes
-- The clean dataset (`donations_facility_unprocessed.csv`) is preserved for comparison.
+- The original dataset (`donations_facility_unprocessed.csv`) is preserved for comparison, somewhat 'clean' with noted minimal missing data in some columns etc.
 - The dirty dataset reflects common data quality issues, making it suitable for testing data cleaning workflows.
 

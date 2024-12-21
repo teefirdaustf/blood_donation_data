@@ -33,5 +33,8 @@ df = pd.concat([df, set_duplicates])
 set_null = df.sample(frac=0.05).index
 df.loc[set_null, "daily"] = np.nan
 
-
+# saving the dirty dataset
+filename = "donations_facility_dirty.csv"
+dirty_df = df.to_csv(filename, index=False)
+print(f"Dirty dataset saved as {filename}")
 
